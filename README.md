@@ -23,6 +23,7 @@ $ mix deps.get
 ## Step 4 - Make it executable
 ```sh
 $ mix escript.build
+Generated escript issues with MIX_ENV=dev
 ```
 
 ## Step 5 - Enjoy !
