@@ -1,5 +1,5 @@
 # Github Issues
-- List Github Issues on any opensource repository for you <3
+- List Github Issues on any opensource repository for you :heart:
 
 ## How to Use
 
