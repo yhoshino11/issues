@@ -5,6 +5,8 @@ defmodule Issues.CLI do
   Handle the command line parsing and the dispatch to the various functions that end up generating a table of the last _n_issues in a github project
   """
 
+  import Issues.TableFormatter, only: [print_table_for_columns: 2]
+
   def run(argv) do
     argv
     |> parse_args
@@ -24,6 +26,7 @@ defmodule Issues.CLI do
     |> convert_to_list_of_hashdicts
     |> sort_into_ascending_order
     |> Enum.take(count)
+    |> print_table_for_columns(["number", "created_at", "title"])
   end
 
   def convert_to_list_of_hashdicts(list) do
