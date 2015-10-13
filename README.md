@@ -1,19 +1,31 @@
-# Issues
+# Github Issues
+- List Github Issues on any opensource repository for you <3
 
-**TODO: Add description**
+## How to Use
 
-## Installation
+## Step 1 - install Elixir
+```sh
+$ elixir -v
+Elixir 1.1.1
+```
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+## Step 2 - Clone This Repository
+```sh
+$ git clone git@github.com:yhoshino11/issues.git
+$ cd issues
+```
 
-  1. Add issues to your list of dependencies in `mix.exs`:
+## Step 3 - Install Dependencies
+```sh
+$ mix deps.get
+```
 
-        def deps do
-          [{:issues, "~> 0.0.1"}]
-        end
+## Step 4 - Make it executable
+```sh
+$ mix escript.build
+```
 
-  2. Ensure issues is started before your application:
-
-        def application do
-          [applications: [:issues]]
-        end
+## Step 5 - Enjoy !
+```sh
+$ ./issues
+```
